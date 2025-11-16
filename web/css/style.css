@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* CAROUSEL EXAMPLE */
+.carousel_example {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.carousel_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+}
+.carousel_slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #2A0739;
+  pointer-events: none;
+}
+.carousel_slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+  pointer-events: auto;
+}
+.carousel_arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+.carousel_arrow:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+.carousel_arrow.prev {
+  left: 20px;
+}
+.carousel_arrow.next {
+  right: 20px;
+}
+.carousel_arrow svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+.carousel_dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  z-index: 10;
+}
+.carousel_dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+.carousel_dot.active {
+  background: #816EB4;
+  width: 30px;
+  border-radius: 5px;
+}
+.carousel_dot:hover {
+  background: #514571;
+}
+.slide_content {
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  width: 100%;
+}
+.slide_title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+.slide_subtitle {
+  font-size: 18px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+.slide_description {
+  font-size: 16px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+.slide_image {
+  width: 100%;
+  max-width: 275px;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: block;
+  object-fit: contain;
+  height: auto;
+}
+.ferret_slide {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: block;
+  object-fit: contain;
+  height: auto;
+}
+.start_button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-block;
+}
+.start_button_image {
+  display: block;
+  width: 150px;
+  height: 60px;
+  max-width: 100%;
+}
+.start_button:hover .start_button_image {
+  opacity: 0.9;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+.button_group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.login_button,
+.register_button {
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.login_button {
+  background: #816EB4;
+  border: none;
+  color: white;
+}
+.register_button {
+  background: transparent;
+  border: 2px solid #816EB4;
+  color: #816EB4;
+}
+.login_button:hover {
+  background: white;
+  color: #816EB4;
+}
+.register_button:hover {
+  background: #816EB4;
+  color: white;
+}
+.skip_button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 10;
+  padding: 10px 15px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+.skip_button:hover {
+  opacity: 1;
+}
+/* Responsive */
+@media (max-width: 768px) {
+.carousel_arrow {
+  width: 40px;
+  height: 40px;
+}
+.carousel_arrow.prev {
+  left: 10px;
+}
+.carousel_arrow.next {
+  right: 10px;
+}
+.slide_title {
+  font-size: 20px;
+}
+.slide_subtitle {
+  font-size: 16px;
+}
+.slide_description {
+  font-size: 14px;
+}
+.button_group {
+  margin-top: 10px;
+  flex-direction: column;
+  gap: 10px;
+}}
+/* CAROUSEL EXAMPLE END */
