@@ -85,7 +85,7 @@ body {
 }
 .carousel_dots {
   position: absolute;
-  bottom: 30px;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
