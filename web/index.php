@@ -18,6 +18,7 @@ $page = isset($_REQUEST['page']) ? htmlspecialchars($_REQUEST['page']) : '';
 SWITCH ( $page ) {
     case 'home':                 include "includes/home.php";                break;
     case 'carousel':             include "includes/carousel_example.php";    break;
+    case 'login':                include "includes/login.php";                break;
     default:                     include "includes/carousel_example.php";   break;
 }
 ?>
