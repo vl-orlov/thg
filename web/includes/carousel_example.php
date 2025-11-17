@@ -43,7 +43,7 @@
                 </p>
                 <div class="button_group">
                     <button class="login_button" onclick="window.location.href='?page=login'">Iniciar sesión</button>
-                    <button class="register_button">Registrarte</button>
+                    <button class="register_button" onclick="window.location.href='?page=regnew'">Registrarte</button>
                 </div>
             </div>
         </div>

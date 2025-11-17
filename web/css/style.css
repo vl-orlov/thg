@@ -351,3 +351,89 @@ body {
   max-width: 250px;
 }}
 /* LOGIN PAGE END */
+
+/* REGISTRATION PAGE */
+.reg_page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px 20px 40px 20px;
+}
+.reg_container {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.reg_title {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1F1F39;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.reg_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.reg_form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.reg_form_label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1F1F39;
+}
+.reg_form_input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  color: #1F1F39;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease;
+}
+.reg_form_input:focus {
+  outline: none;
+  border-color: #816EB4;
+}
+.reg_form_input::placeholder {
+  color: #999;
+}
+.reg_submit_button {
+  width: 100%;
+  padding: 15px;
+  background-color: #816EB4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+.reg_submit_button:hover {
+  background-color: #6a5a94;
+}
+@media (max-width: 768px) {
+.reg_title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.reg_form {
+  gap: 20px;
+}}
+/* REGISTRATION PAGE END */
