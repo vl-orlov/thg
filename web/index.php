@@ -16,10 +16,13 @@
 $page = isset($_REQUEST['page']) ? htmlspecialchars($_REQUEST['page']) : '';
 
 SWITCH ( $page ) {
-    case 'home':                 include "includes/home.php";                   break;
     case 'carousel':             include "includes/carousel_example.php";       break;
     case 'login':                include "includes/login.php";                  break;
     case 'regnew':               include "includes/regnew.php";                 break;
+    case 'footer':               include "includes/footer.php";                 break;
+    case 'home':                 include "includes/home.php";                   break;
+    case 'play':                 include "includes/play.php";                   break;
+    case 'profile':              include "includes/profile.php";                break;
     default:                     include "includes/carousel_example.php";       break;
 }
 ?>

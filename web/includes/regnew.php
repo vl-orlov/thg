@@ -1,7 +1,7 @@
 <div class="reg_page">
     <div class="reg_container">
         <h1 class="reg_title">Mis Datos</h1>
-        <form class="reg_form">
+        <div class="reg_form">
             <div class="reg_form_group">
                 <label for="nombre" class="reg_form_label">Nombre:</label>
                 <input 
@@ -62,7 +62,7 @@
                     placeholder="**********"
                 >
             </div>
-            <button type="submit" class="reg_submit_button">Registrarme</button>
-        </form>
+            <button onclick="window.location.href='?page=profile'" type="submit" class="reg_submit_button">Registrarme</button>
+        </div>
     </div>
 </div>
