@@ -125,7 +125,7 @@ body {
 .slide_subtitle {
   font-size: 18px;
   line-height: 1.3;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   opacity: 0.9;
 }
 .slide_description {
@@ -134,23 +134,30 @@ body {
   margin-bottom: 20px;
   opacity: 0.8;
 }
-.slide_image {
+.slide_image_1 {
   width: 100%;
   max-width: 275px;
   margin: 20px auto;
   border-radius: 10px;
   display: block;
   object-fit: contain;
-  height: auto;
+  height: 60%;
 }
-.ferret_slide {
+.slide_image_2 {
   width: 100%;
-  max-width: 200px;
-  margin: 0 auto;
+  max-width: 360px;
+  margin: 0 auto 20px;
   border-radius: 10px;
   display: block;
-  object-fit: contain;
-  height: auto;
+  height: 60%;
+}
+.slide_image_3 {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 0 0;
+  border-radius: 10px;
+  display: block;
+  height: 60%;
 }
 .start_button {
   background: none;
@@ -237,17 +244,23 @@ body {
 }
 .slide_title {
   font-size: 20px;
+  margin: 0 20px 10px;
 }
 .slide_subtitle {
   font-size: 16px;
+  margin: 0 20px 20px 20px; 
 }
 .slide_description {
   font-size: 14px;
+  margin: 0 20px;
 }
 .button_group {
-  margin-top: 10px;
+  margin: 20px 20px 0;
   flex-direction: column;
   gap: 10px;
+}
+.carousel_slide {
+  padding: 20px 0;
 }
 }
 /* CAROUSEL EXAMPLE END */

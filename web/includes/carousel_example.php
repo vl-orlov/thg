@@ -20,13 +20,13 @@
                 <button class="start_button">
                     <img src="img/icons/button_empezar.svg" alt="EMPEZAR" class="start_button_image">
                 </button>
-                <img src="img/ferret.svg" alt="Training By Gaming" class="slide_image">
+                <img src="img/ferret.svg" alt="Training By Gaming" class="slide_image_1">
             </div>
         </div>
         
         <div class="carousel_slide">
             <div class="slide_content">
-                <img src="img/ferrets.svg" alt="Aprendé jugando y en comunidad" class="slide_image">
+                <img src="img/ferrets.svg" alt="Aprendé jugando y en comunidad" class="slide_image_2">
                 <h2 class="slide_title">Aprendé jugando y en comunidad</h2>
                 <p class="slide_description">
                     Cursos breves, prácticos y pensados para mujeres que quieren aprender nuevas tecnologías con flexibilidad
@@ -36,7 +36,7 @@
         
         <div class="carousel_slide">
             <div class="slide_content">
-                <img src="img/ferret_slide.svg" class="ferret_slide">
+                <img src="img/ferret_slide.svg" class="slide_image_3">
                 <h2 class="slide_title">Creá tu propio camino</h2>
                 <p class="slide_description">
                     Aprende a programar paso a paso, completando misiones y ganando experiencia
@@ -67,6 +67,7 @@
     const prevBtn = carousel_example.querySelector('.carousel_arrow.prev');
     const nextBtn = carousel_example.querySelector('.carousel_arrow.next');
     const skipBtn = carousel_example.querySelector('.skip_button');
+    const startBtn = carousel_example.querySelector('.start_button');
     const dots = carousel_example.querySelectorAll('.carousel_dot');
     const container = carousel_example.querySelector('.carousel_container');
     
@@ -163,6 +164,13 @@
     // Обработчик для кнопки Skip - переходит на последний слайд
     if (skipBtn) {
         skipBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            goToSlide(totalSlides - 1); // Переход на последний слайд (индекс 2)
+        });
+    }
+
+    if (startBtn) {
+        startBtn.addEventListener('click', (e) => {
             e.preventDefault();
             goToSlide(totalSlides - 1); // Переход на последний слайд (индекс 2)
         });
