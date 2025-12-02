@@ -27,7 +27,7 @@
         <div class="carousel_slide">
             <div class="slide_content">
                 <img src="img/ferrets.svg" alt="Aprendé jugando y en comunidad" class="slide_image_2">
-                <h2 class="slide_title">Aprendé jugando y en comunidad</h2>
+                <h2 class="slide_title_2">Aprendé jugando y en comunidad</h2>
                 <p class="slide_description">
                     Cursos breves, prácticos y pensados para mujeres que quieren aprender nuevas tecnologías con flexibilidad
                 </p>
@@ -37,7 +37,7 @@
         <div class="carousel_slide">
             <div class="slide_content">
                 <img src="img/ferret_slide.svg" class="slide_image_3">
-                <h2 class="slide_title">Creá tu propio camino</h2>
+                <h2 class="slide_title_3">Creá tu propio camino</h2>
                 <p class="slide_description">
                     Aprende a programar paso a paso, completando misiones y ganando experiencia
                 </p>
