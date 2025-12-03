@@ -725,8 +725,8 @@ html:has(.profile_page) {
 }}
 /* PROFILE PAGE END */
 
-/* PLAY PAGE */
-.play_page {
+/* HOME PAGE */
+.home_page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -734,7 +734,7 @@ html:has(.profile_page) {
   padding: 20px;
   margin-bottom: 20px;
 }
-.play_container {
+.home_container {
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
@@ -742,7 +742,7 @@ html:has(.profile_page) {
   flex-direction: column;
   gap: 20px;
 }
-.play_title {
+.home_title {
   font-size: 25px;
   font-weight: 600;
   color: #1F1F39;
@@ -882,7 +882,7 @@ html:has(.profile_page) {
   height: 20px;
 }
 @media (max-width: 768px) {
-.play_title {
+.home_title {
   font-size: 22px;
 }
 .daily_progress_card {
@@ -895,7 +895,7 @@ html:has(.profile_page) {
 .course_card {
   padding: 14px;
 }}
-/* PLAY PAGE END */
+/* HOME PAGE END */
 
 /* FOOTER */
 .footer {
