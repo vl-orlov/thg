@@ -1,0 +1,8 @@
+{
+  "login_title": "Datos de Acceso",
+  "login_label_email": "Email/teléfono:",
+  "login_placeholder_email": "...",
+  "login_label_password": "Contraseña:",
+  "login_placeholder_password": "**********",
+  "login_submit_button": "Iniciar sesión"
+}

@@ -1,0 +1,16 @@
+{
+  "reg_title": "My Data",
+  "reg_label_nombre": "Name:",
+  "reg_placeholder_nombre": "...",
+  "reg_label_apellido": "Last Name:",
+  "reg_placeholder_apellido": "...",
+  "reg_label_telefono": "Phone:",
+  "reg_placeholder_telefono": "+XX XXX XXX XXXX",
+  "reg_label_email": "Email:",
+  "reg_placeholder_email": "...",
+  "reg_label_password": "Password:",
+  "reg_placeholder_password": "**********",
+  "reg_label_password_repeat": "Repeat password:",
+  "reg_placeholder_password_repeat": "**********",
+  "reg_submit_button": "Register"
+}

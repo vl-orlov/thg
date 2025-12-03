@@ -11,12 +11,21 @@
             </svg>
         </button>
 
-        <button class="skip_button">Skip</button>
+        <div class="carousel_lang" onclick="toggleLangMenu()">
+            <img src="img/icons/lang.png">
+            <span id="current-lang">ES</span>
+            <ul id="carousel_lang_menu" class="carousel_lang_menu hidden">
+                <li onclick="setLang('carousel', 'es')">Español</li>
+                <li onclick="setLang('carousel', 'en')">English</li>
+            </ul>
+        </div>
+
+        <button class="skip_button" data-i18n="skip_button">Skip</button>
 
         <div class="carousel_slide active">
             <div class="slide_content">
-                <h1 class="slide_title">Training By Gaming</h1>
-                <p class="slide_subtitle">Aprendé a programar jugando</p>
+                <h1 class="slide_title" data-i18n="slide_title_1">Training By Gaming</h1>
+                <p class="slide_subtitle" data-i18n="slide_subtitle_1">Aprendé a programar jugando</p>
                 <button class="start_button">
                     <img src="img/icons/button_empezar.svg" alt="EMPEZAR" class="start_button_image">
                 </button>
@@ -27,8 +36,8 @@
         <div class="carousel_slide">
             <div class="slide_content">
                 <img src="img/ferrets.svg" alt="Aprendé jugando y en comunidad" class="slide_image_2">
-                <h2 class="slide_title_2">Aprendé jugando y en comunidad</h2>
-                <p class="slide_description">
+                <h2 class="slide_title_2" data-i18n="slide_title_2">Aprendé jugando y en comunidad</h2>
+                <p class="slide_description" data-i18n="slide_description_2">
                     Cursos breves, prácticos y pensados para mujeres que quieren aprender nuevas tecnologías con flexibilidad
                 </p>
             </div>
@@ -37,13 +46,13 @@
         <div class="carousel_slide">
             <div class="slide_content">
                 <img src="img/ferret_slide.svg" class="slide_image_3">
-                <h2 class="slide_title_3">Creá tu propio camino</h2>
-                <p class="slide_description">
+                <h2 class="slide_title_3" data-i18n="slide_title_3">Creá tu propio camino</h2>
+                <p class="slide_description" data-i18n="slide_description_3">
                     Aprende a programar paso a paso, completando misiones y ganando experiencia
                 </p>
                 <div class="button_group">
-                    <button class="login_button" onclick="window.location.href='?page=login'">Iniciar sesión</button>
-                    <button class="register_button" onclick="window.location.href='?page=regnew'">Registrarte</button>
+                    <button class="login_button" onclick="window.location.href='?page=login'" data-i18n="login_button">Iniciar sesión</button>
+                    <button class="register_button" onclick="window.location.href='?page=regnew'" data-i18n="register_button">Registrarte</button>
                 </div>
             </div>
         </div>
@@ -57,6 +66,21 @@
 </div>
 
 <script>
+function toggleLangMenu() {
+  const menu = document.getElementById('carousel_lang_menu');
+  menu.classList.toggle('hidden');
+}
+document.addEventListener('DOMContentLoaded', () => {
+  initLang('carousel');
+});
+document.addEventListener('click', function (e) {
+  const langBox = document.querySelector('.carousel_lang');
+  const menu = document.getElementById('carousel_lang_menu');
+  if (!langBox.contains(e.target)) {
+    menu.classList.add('hidden');
+  }
+});
+
 (function() {
     'use strict';
     

@@ -1,0 +1,8 @@
+{
+  "login_title": "Access Data",
+  "login_label_email": "Email/phone:",
+  "login_placeholder_email": "...",
+  "login_label_password": "Password:",
+  "login_placeholder_password": "**********",
+  "login_submit_button": "Log in"
+}
