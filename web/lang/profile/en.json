@@ -1,0 +1,15 @@
+{
+  "profile_title": "My Data",
+  "profile_avatar_alt": "Avatar",
+  "profile_edit_avatar_aria": "Edit avatar",
+  "profile_edit_icon_alt": "Edit",
+  "profile_label_nombre": "Name:",
+  "profile_label_apellido": "Last Name:",
+  "profile_label_telefono": "Phone:",
+  "profile_placeholder_telefono": "+XX XXX XXX XXXX",
+  "profile_label_email": "Email:",
+  "profile_label_password": "Change password:",
+  "profile_placeholder_password": "............",
+  "profile_submit_button": "Save changes"
+}
+

@@ -1,0 +1,21 @@
+{
+  "play_video_play_pause_aria": "Reproducir/Pausar",
+  "play_video_fullscreen_aria": "Pantalla completa",
+  "play_course_title": "HTML desde cero",
+  "play_course_meta": "4h 20m • 12 desafíos",
+  "play_course_about_title": "Acerca de este curso",
+  "play_course_about_toggle_aria": "Alternar sección",
+  "play_course_about_text": "Aprende los fundamentos de lenguaje y aplicalos en desafíos interactivos. Ganá XP, desbloqueá niveles y suma nuevas habilidades.",
+  "play_lesson1_title": "Introducción al código",
+  "play_lesson2_title": "Estructura básica de HTML",
+  "play_lesson3_title": "Desafío práctico",
+  "play_lesson_exercises": "10 ejercicios",
+  "play_lesson_completed_alt": "Completado",
+  "play_lesson_play_aria": "Reproducir lección",
+  "play_lesson_pause_aria": "Pausar lección",
+  "play_lesson_locked_aria": "Lección bloqueada",
+  "play_lesson_locked_alt": "Bloqueado",
+  "play_course_favorite_aria": "Agregar a favoritos",
+  "play_course_start_button": "Empezar/Continuar"
+}
+

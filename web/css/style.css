@@ -278,6 +278,150 @@ body {
 .login_lang_menu.hidden {
   display: none;
 }
+.home_lang {
+  background: white;
+  border-radius: 20px;
+  padding: 3px 8px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #000;
+  z-index: 1000;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+.home_lang:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.home_lang img {
+  width: 18px;
+  height: auto;
+}
+.home_lang_menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 6px;
+  background: white;
+  color: #31414E;
+  border-radius: 6px;
+  padding: 4px 0;
+  list-style: none;
+  font-size: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 99;
+  cursor: pointer;
+}
+.home_lang_menu li {
+  padding: 4px 8px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.home_lang_menu.hidden {
+  display: none;
+}
+.profile_lang {
+  background: white;
+  border-radius: 20px;
+  padding: 3px 8px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #000;
+  z-index: 1000;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+.profile_lang:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.profile_lang img {
+  width: 18px;
+  height: auto;
+}
+.profile_lang_menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 6px;
+  background: white;
+  color: #31414E;
+  border-radius: 6px;
+  padding: 4px 0;
+  list-style: none;
+  font-size: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 99;
+  cursor: pointer;
+}
+.profile_lang_menu li {
+  padding: 4px 8px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.profile_lang_menu.hidden {
+  display: none;
+}
+.play_lang {
+  background: white;
+  border-radius: 20px;
+  padding: 3px 8px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #000;
+  z-index: 1000;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+.play_lang:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.play_lang img {
+  width: 18px;
+  height: auto;
+}
+.play_lang_menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 6px;
+  background: white;
+  color: #31414E;
+  border-radius: 6px;
+  padding: 4px 0;
+  list-style: none;
+  font-size: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 99;
+  cursor: pointer;
+}
+.play_lang_menu li {
+  padding: 4px 8px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.play_lang_menu.hidden {
+  display: none;
+}
 .slide_content {
   text-align: center;
   color: white;
@@ -658,14 +802,17 @@ body {
   padding: 20px 20px 40px 20px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 body:has(.reg_page) {
   overflow-y: auto;
   position: relative;
+  scroll-behavior: smooth;
 }
 html:has(.reg_page) {
   overflow-y: auto;
   position: relative;
+  scroll-behavior: smooth;
 }
 .reg_container {
   width: 100%;
@@ -756,14 +903,17 @@ html:has(.reg_page) {
   margin-bottom: 80px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 body:has(.profile_page) {
   overflow-y: auto;
   position: relative;
+  scroll-behavior: smooth;
 }
 html:has(.profile_page) {
   overflow-y: auto;
   position: relative;
+  scroll-behavior: smooth;
 }
 .profile_container {
   width: 100%;
@@ -908,14 +1058,17 @@ html:has(.profile_page) {
   margin-bottom: 80px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 body:has(.home_page) {
   overflow-y: auto;
   position: relative;
+  scroll-behavior: smooth;
 }
 html:has(.home_page) {
   overflow-y: auto;
   position: relative;
+  scroll-behavior: smooth;
 }
 .home_container {
   width: 100%;
@@ -1090,14 +1243,17 @@ html:has(.home_page) {
   margin-bottom: 80px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 body:has(.play_page) {
   overflow-y: auto;
   position: relative;
+  scroll-behavior: smooth;
 }
 html:has(.play_page) {
   overflow-y: auto;
   position: relative;
+  scroll-behavior: smooth;
 }
 .play_container {
   width: 100%;
@@ -1485,7 +1641,7 @@ html:has(.play_page) {
   object-fit: contain;
 }
 @media (max-width: 768px) {
-.footer_item {
+.footer_icon {
   width: 45px;
   height: 45px;
 }}

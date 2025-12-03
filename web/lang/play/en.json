@@ -1,0 +1,21 @@
+{
+  "play_video_play_pause_aria": "Play/Pause",
+  "play_video_fullscreen_aria": "Fullscreen",
+  "play_course_title": "HTML from scratch",
+  "play_course_meta": "4h 20m • 12 challenges",
+  "play_course_about_title": "About this course",
+  "play_course_about_toggle_aria": "Toggle section",
+  "play_course_about_text": "Learn the fundamentals of the language and apply them in interactive challenges. Earn XP, unlock levels and add new skills.",
+  "play_lesson1_title": "Introduction to code",
+  "play_lesson2_title": "Basic HTML structure",
+  "play_lesson3_title": "Practical challenge",
+  "play_lesson_exercises": "10 exercises",
+  "play_lesson_completed_alt": "Completed",
+  "play_lesson_play_aria": "Play lesson",
+  "play_lesson_pause_aria": "Pause lesson",
+  "play_lesson_locked_aria": "Locked lesson",
+  "play_lesson_locked_alt": "Locked",
+  "play_course_favorite_aria": "Add to favorites",
+  "play_course_start_button": "Start/Continue"
+}
+
