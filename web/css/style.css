@@ -326,6 +326,26 @@ body {
 .home_lang_menu.hidden {
   display: none;
 }
+.home_logout_button {
+  background: white;
+  border-radius: 20px;
+  padding: 8px 16px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1F1F39;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.home_logout_button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
 .profile_lang {
   background: white;
   border-radius: 20px;
@@ -1078,12 +1098,19 @@ html:has(.home_page) {
   flex-direction: column;
   gap: 20px;
 }
+.home_header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
 .home_title {
   font-size: 25px;
   font-weight: 600;
   color: #1F1F39;
+  margin: 0;
   text-align: center;
-  margin-bottom: 10px;
+  width: 100%;
 }
 .daily_progress_card {
   background-color: white;

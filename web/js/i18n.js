@@ -3,8 +3,6 @@ async function setLang(page, lang) {
   if (currentLangEl) {
     currentLangEl.textContent = lang.toUpperCase();
   }
-
-  // Сохраняем выбранный язык в localStorage
   localStorage.setItem('lang', lang);
 
   try {
@@ -16,24 +14,18 @@ async function setLang(page, lang) {
     }
 
     const dict = await res.json();
-
-    // Обычные тексты
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       if (dict[key]) {
         el.textContent = dict[key];
       }
     });
-
-    // Плейсхолдеры
     document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
       const key = el.getAttribute('data-i18n-placeholder');
       if (dict[key]) {
         el.setAttribute('placeholder', dict[key]);
       }
     });
-
-    // HTML-тексты
     document.querySelectorAll('[data-i18n-html]').forEach(el => {
       const key = el.getAttribute('data-i18n-html');
       if (dict[key]) {
@@ -46,7 +38,7 @@ async function setLang(page, lang) {
   }
 }
 
-const supportedLangs = ['es', 'en', 'ru'];
+const supportedLangs = ['es', 'en'];
 
 function initLang(page = 'landing', defaultLang = 'es') {
   const storedLang = localStorage.getItem('lang');

@@ -5,5 +5,6 @@
   "home_course2_title": "Advanced HTML",
   "home_course3_title": "HTML from scratch",
   "home_course_completed": "Completed",
-  "home_play_course_aria": "Play course"
+  "home_play_course_aria": "Play course",
+  "home_logout_button": "Log out"
 }

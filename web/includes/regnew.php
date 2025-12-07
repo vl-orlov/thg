@@ -76,7 +76,7 @@
                     placeholder="**********"
                 >
             </div>
-            <button onclick="window.location.href='?page=profile'" type="submit" class="reg_submit_button" data-i18n="reg_submit_button">Registrarme</button>
+            <button onclick="window.location.href='?page=home'" type="submit" class="reg_submit_button" data-i18n="reg_submit_button">Registrarme</button>
         </div>
     </div>
 </div>

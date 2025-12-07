@@ -32,7 +32,7 @@
                     placeholder="**********"
                 >
             </div>
-            <button onclick="window.location.href='?page=profile'" type="submit" class="login_submit_button" data-i18n="login_submit_button">Iniciar sesión</button>
+            <button onclick="window.location.href='?page=home'" type="submit" class="login_submit_button" data-i18n="login_submit_button">Iniciar sesión</button>
         </div>
         <div class="login_character">
             <img src="img/ferret_happy.svg" class="login_character_image">

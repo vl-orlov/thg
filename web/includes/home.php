@@ -8,7 +8,10 @@
         </ul>
     </div>
     <div class="home_container">
-        <h1 class="home_title" data-i18n="home_title">Mis Cursos</h1>
+        <div class="home_header">
+            <h1 class="home_title" data-i18n="home_title">Mis Cursos</h1>
+            <button class="home_logout_button" onclick="window.location.href='?page=carousel'" data-i18n="home_logout_button">Salir</button>
+        </div>
         <div class="daily_progress_card">
             <div class="daily_progress_label" data-i18n="home_daily_progress_label">Aprendido hoy</div>
             <div class="daily_progress_time">
