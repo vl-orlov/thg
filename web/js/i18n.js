@@ -42,9 +42,7 @@ const supportedLangs = ['es', 'en'];
 
 function initLang(page = 'landing', defaultLang = 'es') {
   const storedLang = localStorage.getItem('lang');
-  const browserLang = (navigator.language || '').split('-')[0];
-
-  const lang = storedLang ?? (supportedLangs.includes(browserLang) ? browserLang : defaultLang);
+  const lang = (storedLang && supportedLangs.includes(storedLang)) ? storedLang : defaultLang;
 
   setLang(page, lang);
 }
